@@ -5,3 +5,8 @@
 				     there is a well in front of you.))
 			(attic (you are in the attic.
 				    there is a giant welding torch in the orner.))))
+
+(defun describe-location (location nodes)
+  (cadr (assoc location nodes)))
+
+(print (describe-location 'living-room *nodes*)  )
